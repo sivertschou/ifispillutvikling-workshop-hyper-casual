@@ -19,7 +19,7 @@ Unity har mange innebydge hjelpemidler, og et godt eksempel på dette er InputMa
 Klikk på Edit -> Project Settings -> Inputs. Vi ser nå at Inspector-en vår viser Input Manager. Klikk på Axes for å vise alt vi kan endre. Trykk på Jump for å se hva denne er mappet til. Vi ser at denne er mappet til space, og det er bra. Vi kunne også ha mappet denne til andre verdier, og eventuelt lagt til flere Inputs. Mer informasjon om dette kan du finne [her](https://docs.unity3d.com/Manual/ConventionalGameInput.html). En fordel med å bruke dette er at brukeren enkelt kan mappe f.eks. Jump til hva enn den vil før spillet starter.
 
 ### Oppgave 1.2
-Nå som vi har inputen på plass, er det på tide å legge til en spiller. Vi oppretter et tomt GameObject ved å høyreklikke i Hiererchy-vinduet etterfulgt av Create Empty. Gi dette objektet navnet "Player" og gi den Tag-en "Player". Dobbelsjekk at det nye objektet har 0 som posisjon, rotasjon og scale i Transform-komponenten. Dersom dette ikke skulle være tilfellet kan du klikke på det lille tannhjulet i komponentn etterfulgt av Reset. Vi ønsker å legge til et par komponeneter; Sprite Renderer, Box Collider 2D og RigidBody 2D. 
+Nå som vi har inputen på plass, er det på tide å legge til en spiller. Vi oppretter et tomt GameObject ved å høyreklikke i Hiererchy-vinduet etterfulgt av Create Empty. Gi dette objektet navnet "Player" og gi den Tag-en "Player". Dobbelsjekk at det nye objektet har (0,0,0) som posisjon og rotasjon og (1,1,1) som scale i Transform-komponenten. Dersom dette ikke skulle være tilfellet kan du klikke på det lille tannhjulet i komponentn etterfulgt av Reset. Vi ønsker å legge til et par komponeneter; Sprite Renderer, Box Collider 2D og RigidBody 2D. 
 
 <p>
     <img src="img\PlayerOppgave1.PNG" alt><br>
@@ -105,7 +105,7 @@ Nå som vi har lagt en spiller og kan bevege denne, er det på tide å legge til
 Vi kommer til å strukturere hinderet vårt som en container, **Obstacle**, med et script som kontrollerer hovedfunksjonaliteten til hinder-objektet. Denne containeren har tre barneobjekter; **PointTrigger**, **ObstacleTop** og **ObstacleBottom**. ObstacleTop og ObstacleBottom skal kun inneholde grafikk (Sprite Renderer) og én Box Collider 2D. PointTrigger skal også inneholde én Box Collider 2D, men også et script som sier ifra til en GameManager som vi lager senere.
 
 ### Oppgave 2.1
-Opprett et nytt tomt GameObject ([Hierarchy] Høyreklikk -> Empty GameObject) og kall dette objektet **Obstacle**. Legg til et barneobjekt tre barneobjekter; PointTrigger, ObstacleTop og ObstacleBottom. (Her kan du duplicate ObstacleBottom fra ObstacleTop når denne er ferdig, så slipper du dobbelt arbeid). Pass på at Transformene er satt til å ha `position og rotation = (0,0,0)` og `scale = (1,1,1)`. Komponenter hvert objekt skal ha:
+Opprett et nytt tomt GameObject ([Hierarchy] Høyreklikk -> Empty GameObject) og kall dette objektet **Obstacle**. Legg til tre barneobjekter; PointTrigger, ObstacleTop og ObstacleBottom. (Her kan du duplicate ObstacleBottom fra ObstacleTop når denne er ferdig, så slipper du dobbelt arbeid). Pass på at Transformene er satt til å ha `position og rotation = (0,0,0)` og `scale = (1,1,1)`. Komponenter hvert objekt skal ha:
 
 - **ObstacleTop & ObstacleBottom**
     - Sprite Renderer
