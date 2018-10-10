@@ -8,7 +8,7 @@ Oppgavene er ganske åpne, og formålet er å bli bedre kjent med mer av program
 Spillet går ut på å komme seg gjennom hindre ved å endre hvilken retning spilleren faller.
 
 ## Del 1 - Gjør klart prosjektet
-Opprett et nytt Unity-prosjekt. Prosjektet skal bruke under Template velger du **2D**. Last ned dette repoet som zip ([last ned repoet som .zip her](https://github.com/sivertschou/ifispillutvikling-workshop-hyper-casual/archive/master.zip)). Erstatt Assets-mappen i prosjektet ditt med Assets-mappen i dette repoet.
+Opprett et nytt Unity-prosjekt. Under Template velger du **2D**. Last ned dette repoet som zip ([last ned repoet som .zip her](https://github.com/sivertschou/ifispillutvikling-workshop-hyper-casual/archive/master.zip)). Erstatt Assets-mappen i prosjektet ditt med Assets-mappen i dette repoet.
 
 Når det kommer til **Sprites**, så er vi så heldige at vi har fått laget sprites tilpasset akkurat denne workshoppen. Disse ligger i Sprites/Ekstrasprites-mappen, og de er det bare å bruke! Dersom du ønsker å starte med enkle bokser er det også bare å gjøre det - det er veldig enkelt å bytte til bedre sprites senere:)
 
@@ -19,7 +19,7 @@ Unity har mange innebydge hjelpemidler, og et godt eksempel på dette er InputMa
 Klikk på Edit -> Project Settings -> Inputs. Vi ser nå at Inspector-en vår viser Input Manager. Klikk på Axes for å vise alt vi kan endre. Trykk på Jump for å se hva denne er mappet til. Vi ser at denne er mappet til space, og det er bra. Vi kunne også ha mappet denne til andre verdier, og eventuelt lagt til flere Inputs. Mer informasjon om dette kan du finne [her](https://docs.unity3d.com/Manual/ConventionalGameInput.html). En fordel med å bruke dette er at brukeren enkelt kan mappe f.eks. Jump til hva enn den vil før spillet starter.
 
 ### Oppgave 1.2
-Nå som vi har inputen på plass, er det på tide å legge til en spiller. Vi oppretter et tomt GameObject ved å høyreklikke i Hiererchy-vinduet etterfulgt av Create Empty. Gi dette objektet navnet "Player" og gi den Tag-en "Player". Dobbelsjekk at det nye objektet har (0,0,0) som posisjon og rotasjon og (1,1,1) som scale i Transform-komponenten. Dersom dette ikke skulle være tilfellet kan du klikke på det lille tannhjulet i komponentn etterfulgt av Reset. Vi ønsker å legge til et par komponeneter; Sprite Renderer, Box Collider 2D og RigidBody 2D. 
+Nå som vi har inputen på plass, er det på tide å legge til en spiller. Vi oppretter et tomt GameObject ved å høyreklikke i Hiererchy-vinduet etterfulgt av Create Empty. Gi dette objektet navnet "Player" og gi den Tag-en "Player". Dobbelsjekk at det nye objektet har (0,0,0) som posisjon og rotasjon og (1,1,1) som scale i Transform-komponenten. Dersom dette ikke skulle være tilfellet kan du klikke på det lille tannhjulet i komponenten etterfulgt av Reset. Vi ønsker å legge til et par komponeneter; Sprite Renderer, Box Collider 2D og RigidBody 2D. 
 
 <p>
     <img src="img\PlayerOppgave1.PNG" alt><br>
