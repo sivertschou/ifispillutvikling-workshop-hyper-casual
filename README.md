@@ -22,7 +22,7 @@ Klikk på Edit -> Project Settings -> Inputs. Vi ser nå at Inspector-en vår vi
 Nå som vi har inputen på plass, er det på tide å legge til en spiller. Vi oppretter et tomt GameObject ved å høyreklikke i Hiererchy-vinduet etterfulgt av Create Empty. Gi dette objektet navnet "Player" og gi den Tag-en "Player". Dobbelsjekk at det nye objektet har 0 som posisjon, rotasjon og scale i Transform-komponenten. Dersom dette ikke skulle være tilfellet kan du klikke på det lille tannhjulet i komponentn etterfulgt av Reset. Vi ønsker å legge til et par komponeneter; Sprite Renderer, Box Collider 2D og RigidBody 2D. 
 
 <p>
-    <img src="img\PlayerOppgave1.png" alt><br>
+    <img src="img\PlayerOppgave1.PNG" alt><br>
 </p>
 
 ### Oppgave 1.3
@@ -396,7 +396,7 @@ Vi trenger å se scoren vår når vi spiller!
 Opprett et nytt Text-element ([Hierarchy] Høyreklikk -> UI -> Text). Velg dette elementet og trykk på boksen øverst til venstre i **Inspector**-vinduet under **Rect-transform**. Hold inne `Crtl + Alt + Shift` og trykk på alternativet nederst til høyre. Dette gjør at selve tekstboksen dekker hele skjermen.
 
 <p>
-    <img src="img/Oppgave4Align.png">
+    <img src="img/Oppgave4Align.PNG">
 </p>
 
 Skalér opp skriftstørrelsen til en passende størrelse og endre fargen til noe som er synlig i spillet ditt i **Text**-komponenten, for oss er dette 75px. Velg også horisontalt centrert alignment. Til slutt kan vi gi objektet et bedre navn; ScoreText.
