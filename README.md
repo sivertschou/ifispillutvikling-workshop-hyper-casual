@@ -170,7 +170,7 @@ Vi har nå laget et hindre-objekt. Dette kan vi bruke som en mal, og kan derfor 
 I denne delen ønsker vi å faktisk lage en ordentlig spillmekanikk. Vi må derfor opprette blant annet en GameManager som skal holde styr på spillets tilstand osv. Vi må også lage Prefabs/maler av både spiller- og hinder-objektene våre.
 
 ### Oppgave 3.1
-Marker både **Player**-objektet i Hierarchy-vinduet, og dra den inn i Prefabs-mappen i Project-vinduet. Gjør det samme for **Obstacle**-objektet.
+Opprett en mappe i **Assets**-mappen med navnet **Prefabs**. Marker **Player**-objektet i Hierarchy-vinduet, og dra den inn i Prefabs-mappen i Project-vinduet. Gjør det samme for **Obstacle**-objektet.
 
 <details><summary>💾 Løsningsforslag </summary>
 <p>
